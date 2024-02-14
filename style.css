@@ -17,7 +17,7 @@
 
 .img-baixo {
     margin: 200%;
-    width: 210px;
+    width: 200px;
     height: 500px;
 }
 
@@ -34,7 +34,7 @@ body {
     width: 700px;
     position: absolute;
     color: #fff;
-    left: 90px;
+    left: 91px;
     text-align: justify;
     margin-top: 400px;
 }
