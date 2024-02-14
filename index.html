@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+    <title>Maanri</title>
+</head>
+
+<body>
+
+    <table class="img-grande">
+        <tr>
+            <td><img src="consultorio1.png"></td>
+            <td><img src="consultorio2.png"></td>
+
+        </tr>
+
+        <tr class="img-baixo">
+            <td><img src="consultorio.png"></td>
+            <td><img src="consultorio3.png"></td>
+        </tr>
+    </table>
+
+    <div class="draggable">
+        <h1>Maanri Estética Corporal e Aculputura</h1>
+        <h2> Mudar faz bem! E foi assim que a Maanri terapias também mudou. Venha conhecer nosso novo espaço!</h2>
+        <button onclick="cliqueiNoBotao()">Fale Conosco</button>
+    </div>
+
+    <div class="endereço">
+        <h1>Visite nossas rede sociais.</h1>
+        <a href="https://instagram.com/maanri.terapias?igshid=NGVhN2U2NjQ0Yg== " target="_blank">Instagram</a>
+        <br>
+        <a href="" target="_blank">Facebook</a>
+    </div>
+    <div class="fale-conosco">
+        <input placeholder="Seu nome" type="text" nome="Nome">
+        <input placeholder="Seu telefone" type="tel" nome="Telefone">
+        <textarea placeholder="Tratamento que procura?" nome="Problema"></textarea>
+        <button onclick="sumirFormulario()">Enviar formulário</button>
+    </div>
+    <div>
+        <footer class="localização">
+            <h2> Nosso Endereço:</h2>
+            Aparecido Gomes da Silva 250, Bairro Parque Pinheiros - Ref. Atras do Supermercado Rod e Raf 
+            Laurita Ortega Mari, CEP:06766-270
+        </footer>
+    </div>
+</body>
+
+<script>
+    let formulario = document.querySelector(".fale-conosco")
+    let mascara = document.querySelector(".mascara-form")
+
+
+    function cliqueiNoBotao() {
+        formulario.style.left = "700px"
+        mascara.style.visibility = "visible"
+    }
+
+    function sumirFormulario() {
+        formulario.style.left = "-320px"
+        mascara.style.visibility = "hidden"
+    }
+
+</script>
+
+
+</html>
